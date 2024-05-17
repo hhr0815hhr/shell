@@ -135,6 +135,9 @@ install_php() {
         --enable-pcntl \
         --enable-soap \
         --enable-zip \
+        --enable-mysqlnd \                   # 启用 mysqlnd 支持
+        --enable-mysqli \                   # 启用 mysqli 扩展
+        --with-pdo-mysql=mysqlnd \           # 启用 pdo_mysql 扩展并使用 mysqlnd
         --with-curl \
         --with-openssl \
         --with-zlib \
