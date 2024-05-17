@@ -145,6 +145,7 @@ install_php() {
         --with-freetype
     make -j$(nproc)
     make install
+    cp ./php.ini-development /usr/local/php/etc/php.ini
 }
 
 # 安装 PHP 扩展
